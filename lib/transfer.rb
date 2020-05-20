@@ -35,7 +35,6 @@ attr_accessor :sender, :receiver, :status, :amount
        @status = "reversed"
        reversed_r
        reversed_s
-       binding.pry
   else
   end
   end
