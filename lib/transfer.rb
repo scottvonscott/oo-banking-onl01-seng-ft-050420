@@ -1,4 +1,4 @@
-binding.pry
+require 'pry'
 class Transfer
 
 attr_accessor :sender, :receiver, :status, :amount
