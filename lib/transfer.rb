@@ -36,8 +36,6 @@ attr_accessor :sender, :receiver, :status, :amount
   else
     nil
   end
-  @receiver.balance
-  @sender.balance
   end
 
 end
