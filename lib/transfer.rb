@@ -23,7 +23,7 @@ attr_accessor :sender, :receiver, :status, :amount
       @status = "rejected"
     else
       "Something here"
-      
+
     end
   end
 
