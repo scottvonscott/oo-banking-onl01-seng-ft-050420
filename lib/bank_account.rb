@@ -24,6 +24,7 @@ end
 
 def close_account
   @status = "closed"
+  @status
 end
 
 end
