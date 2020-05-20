@@ -16,7 +16,7 @@ attr_accessor :sender, :receiver, :status, :amount
 
   def execute_transaction
     if @sender.balance < amount
-      "Transaction rejected. Please check your account balance."
+      "No money."
     elsif self.valid?
       @status != "complete"
        @sender.balance = @sender.balance - amount
