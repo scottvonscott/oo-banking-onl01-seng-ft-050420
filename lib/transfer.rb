@@ -16,6 +16,7 @@ attr_accessor :sender, :receiver, :status, :amount
 
   def execute_transaction
     if @sender.balance < amount
+      binding.pry
       "No money  4U"
     elsif @status != "complete"
        @sender.balance = @sender.balance - amount
