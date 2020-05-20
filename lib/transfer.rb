@@ -25,7 +25,6 @@ attr_accessor :sender, :receiver, :status, :amount
     else
       "No money"
     end
-    binding.pry
   end
 
   def reverse_transfer
