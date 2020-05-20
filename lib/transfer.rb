@@ -34,6 +34,7 @@ attr_accessor :sender, :receiver, :status, :amount
        @sender.balance + amount
        @status = "reversed"
   else
+    nil
   end
   end
 
