@@ -15,7 +15,10 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def execute_transaction
-    if @sender.balance > amount && @status != "complete"
+    if @sender.balance < amount
+      "No money  4U"
+
+      @sender.balance > amount && @status != "complete"
        @sender.balance = @sender.balance - amount
        @receiver.balance = @receiver.balance + amount
        @status = "complete"
