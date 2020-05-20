@@ -23,7 +23,7 @@ attr_accessor :sender, :receiver, :status, :amount
        @receiver.balance = @receiver.balance + amount
        @status = "complete"
     else
-      "Rejected"
+      "No money"
     end
     binding.pry
   end
