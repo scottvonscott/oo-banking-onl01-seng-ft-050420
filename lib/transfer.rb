@@ -21,6 +21,7 @@ attr_accessor :sender, :receiver, :status, :amount
        @status = "complete"
     else
       "rejected"
+    end
 
 
   end
