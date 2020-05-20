@@ -19,6 +19,7 @@ attr_accessor :sender, :receiver, :status, :amount
     @receiver.balance = @receiver.balance + amount
     @status = "complete"
     
+
   end
 
   def reverse_transfer
