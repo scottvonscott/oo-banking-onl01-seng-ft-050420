@@ -15,9 +15,7 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def execute_transaction
-    binding.pry
     if @sender.balance < amount
-
       "No money  4U"
     elsif @status != "complete"
        @sender.balance = @sender.balance - amount
@@ -26,6 +24,7 @@ attr_accessor :sender, :receiver, :status, :amount
     else
       "Rejected"
     end
+    binding.pry
   end
 
   def reverse_transfer
