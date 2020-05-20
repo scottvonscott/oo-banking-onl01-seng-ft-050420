@@ -17,13 +17,13 @@ attr_accessor :sender, :receiver, :status, :amount
   def execute_transaction
     if @sender.balance < amount
       "No money."
-      @staus = "rejected"
+      @status = "rejected"
     elsif self.valid? && @status != "complete"
        @sender.balance = @sender.balance - amount
        @receiver.balance = @receiver.balance + amount
        @status = "complete"
     else
-      @staus = "rejected"
+      @status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
   end
