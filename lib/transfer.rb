@@ -30,7 +30,7 @@ attr_accessor :sender, :receiver, :status, :amount
 
   def reverse_transfer
     binding.pry
-    if @status = "complete"
+    if @status = "complete"||"pending"
        @receiver.balance = @receiver.balance - amount
        @sender.balance = @sender.balance + amount
        @status = "reversed"
