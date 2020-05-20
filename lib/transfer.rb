@@ -24,10 +24,7 @@ attr_accessor :sender, :receiver, :status, :amount
        @status = "complete"
     else
       "Rejected"
-
     end
-
-
   end
 
   def reverse_transfer
